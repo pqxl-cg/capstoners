@@ -12,7 +12,7 @@ build:
   commands:
     - echo build Docker image on `date`
     - cd src
-    - docker build -t capstoners_image:latest
+    - docker build -t capstoners_image:latest .
     - docker tag capstoners_image:latest 962804699607.dkr.ecr.us-west-2.amazonaws.com/capstoners:latest 
 post_build:
   commands:
