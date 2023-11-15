@@ -12,7 +12,6 @@ phases:
     commands:
       - echo build Docker image on `date`
       - docker build -t capstoners .
-      - docker image ls
       - docker tag capstoners:latest 962804699607.dkr.ecr.us-west-2.amazonaws.com/capstoners:latest
   post_build:
     commands:
